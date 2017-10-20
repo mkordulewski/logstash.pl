@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(logstash\.pl)$ [NC]
+RewriteRule ^ https://www.elastic.co/products/logstash [R=302,L,NE]
